@@ -1,3 +1,29 @@
 @startuml use_case
+left to right direction
+skinparam packageStyle rectangle
 
+actor "Student" as student
+
+rectangle "GPA Calculator App" {
+  usecase "Sign Up" as UC1
+  usecase "Log In" as UC2
+  usecase "Log Out" as UC3
+  usecase "View Courses" as UC4
+  usecase "Add Course" as UC5
+  usecase "Update Grade" as UC6
+  usecase "Delete Course" as UC7
+  usecase "View GPA" as UC8
+  usecase "Authenticate" as UC9
+}
+
+student --> UC1
+student --> UC2
+student --> UC3
+student --> UC4
+student --> UC5
+student --> UC6
+student --> UC7
+student --> UC8
+UC1 ..> UC9 : <<include>>
+UC2 ..> UC9 : <<include>>
 @enduml
