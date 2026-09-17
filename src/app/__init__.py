@@ -8,7 +8,15 @@ Description: Project 1 - GPA Calculator
 from flask import Flask
 import os
 
-app = Flask("GPA Calculator Web App")
+_APP_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_DIR = os.path.dirname(_APP_DIR)
+_REPO_ROOT = os.path.dirname(_PROJECT_DIR)
+
+app = Flask(
+    "GPA Calculator Web App",
+    template_folder=os.path.join(_REPO_ROOT, 'templates'),
+    static_folder=os.path.join(_REPO_ROOT, 'static'),
+)
 app.secret_key = 'You will never know!'
 
 # db initialization
