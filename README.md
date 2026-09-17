@@ -100,17 +100,19 @@ pip install <package-name>
 
 | Phase | Task | Start | End | Duration | Deliverable |
 |---|---|---|---|---|---|
-| Modeling | Requirements Analysis | mm/dd/26 | mm/dd/26 | .. days | Use Case Diagram |
-| Modeling | Data Model | mm/dd/26 | mm/dd/26 | .. days | Class Diagram |
-| Construction | Coding | mm/dd/26 | mm/dd/26 | .. days | Code |
-| Construction | Testing | mm/dd/26 | mm/dd/26 | .. days | Test Report |
-| Deployment | Delivery | mm/dd/26 | mm/dd/26 | .. days | Final Commit/Push |
+| Modeling | Requirements Analysis | 09/16/26 | 09/17/26 | 2 days | Use Case Diagram |
+| Modeling | Data Model | 09/17/26 | 09/18/26 | 2 days | Class Diagram |
+| Construction | Coding | 09/18/26 | 10/01/26 | 14 days | Code |
+| Construction | Testing | 10/02/26 | 10/05/26 | 4 days | Test Report |
+| Deployment | Delivery | 10/06/26 | 10/07/26 | 2 days | Final Commit/Push |
 
 ## Team Roles
 
 | Name | Role(s) |
 |---|---|
-| | manager, developer, tester, documenter |
+| *(give me names — I'll fill in)* | manager (owner), developer, tester |
+| | developer |
+| | developer, tester |
 
 ## Manual Testing Log
 
