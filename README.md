@@ -14,57 +14,6 @@ letter grades, and instantly see their credit-weighted GPA. Every grade can be
 updated or a course deleted. The app is a proof of concept built on a
 Flask + SQLAlchemy baseline.
 
-## Tech Stack
-
-| Layer | Technology | Purpose |
-|---|---|---|
-| Framework | [Flask](https://flask.palletsprojects.com) | Web app |
-| ORM | Flask-SQLAlchemy | Data access (`User`, `Course`, `Enrollment`) |
-| Forms | Flask-WTF / WTForms | Signup, login, enrollment forms |
-| Auth | Flask-Login | Session management |
-| Hashing | bcrypt | Password hashing |
-| Database | SQLite | Local `instance/prj1.db` |
-| Activation | `gpa_calculator` | Credit-weighted GPA library (PyPI) |
-| Testing | pytest | Unit tests for `gpa_calculator` |
-| Linting | ruff | Code quality gate |
-| Packaging | hatchling | Build for PyPI |
-| Containers | Docker | Instructor-friendly deployment |
-
-## Rubric Checklist
-
-- [ ] **Planning: Schedule** — project timeline filled in (see [Schedule](#schedule))
-- [ ] **Planning: Team Roles** — roles assigned (see [Team Roles](#team-roles))
-- [ ] **Modeling: Use Case Diagram** — `uml/use_case.wsd`
-- [ ] **Modeling: Class Diagram** — `uml/class.wsd`
-- [ ] **Checkpoint** — diagrams + working baseline + protected main + schedule/roles
-- [ ] **Courses data load** — ≥5 courses in `src/init_db.py`
-- [ ] **Authentication** — signup, login, signout
-- [ ] **List of Enrollments** — show all courses of the student
-- [ ] **Create Enrollment** — add a course + grade
-- [ ] **Delete Enrollment** — remove a course
-- [ ] **GPA Calculation and Display** — credit-weighted, shown on enrollments page
-- [ ] **GPA PyPI build and deployment** — `gpa_calculator` installable via pip
-- [ ] **Testing** — manual test log (see [Testing Log](#manual-testing-log))
-- [ ] **Deployment** — working `Dockerfile`
-- [ ] **`main` branch protected** — no direct pushes
-
-## Features
-
-- [x] Baseline Flask + SQLAlchemy app
-- [x] Data model: `User`, `Course`, `Enrollment`
-- [x] Forms: signup, login, enrollment, delete
-- [x] `dev` branch + protected `main`
-
-### In progress / planned
-
-- [ ] Implement signup / login / signout routes
-- [ ] Seed ≥5 courses in `init_db.py`
-- [ ] Implement `calculate_gpa` in `gpa_calculator`
-- [ ] List / create / delete enrollments + GPA display
-- [ ] Unit tests (`pytest`) + CI
-- [ ] Publish `gpa_calculator` to PyPI
-- [ ] Docker deployment
-
 ## Branch Model
 
 ```
